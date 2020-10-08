@@ -7,7 +7,7 @@
   <!--pages/demo02/demo02.wxml-->
 <swiper  class="index_swiper" autoplay="true" circular="true" interval="2000" indicator-dots="true">
 
-    <swiper-item ><navigator><image  mode="widthFix" src="../../img/1.png"/></navigator></swiper-item>
+    <swiper-item ><navigator><image  mode="widthFix" src="https://img.alicdn.com/simba/img/TB1tReXzUz1gK0jSZLeSuv9kVXa.jpg"/></navigator></swiper-item>
     <swiper-item ><navigator><image  mode="widthFix" src="../../img/true.jpg"/></navigator></swiper-item>
     <swiper-item ><navigator><image  mode="widthFix" src="../../img/true2.jpg" /></navigator></swiper-item>
 

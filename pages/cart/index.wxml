@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="card">
+        <text>轻轻扫一扫</text>
+        <text>告别零钱烦恼</text>
+    </view>
+
+    <view class="Code_img">
+        <image src="../../img/Code_img1.png"></image>
+    </view>
+
+
+    <view class="update"><text>点击刷新</text><image src="../../icons/update.png"></image></view>
+
+</view>
