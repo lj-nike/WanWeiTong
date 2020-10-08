@@ -1,0 +1,86 @@
+<!--pages/user/index.wxml-->
+<view class="user_info_wrap">
+    <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+        <image class="user_bg" src="{{userinfo.avatarUrl}}" mode="widthFix"></image>
+        
+        <view class="user_info">
+            <image class="user_icon" src = "{{userinfo.avatarUrl}}"/>
+            <view class="user_name">
+                {{userinfo.nickName}}
+                {{userinfo.a}}
+            </view>
+        </view>
+    </view>
+
+    <view wx:else>
+        <navigator url="#"  open-type="navigate">
+            <button style = "border-radius: 29rpx;"open-type = "getUserInfo"  bindgetuserinfo = "getProfile" plain>登录</button>
+        </navigator>
+    </view>
+      
+</view>
+
+
+<view class="user_content">
+    <view class="user_main">
+        
+
+        <!-- 订单 -->
+        <view class="order_wrap">
+            <!-- <view class="ordertitle"></view> -->
+            <view class="content">
+                <navigator class="" open-type="navigate" url="../order/index">
+                    <view ><image  class="option" src="../../img/position2.png"></image></view>
+                        <view class="order_name">我的行程</view>  
+                </navigator>
+                <navigator class="" open-type="navigate" url="../order/index">
+                    <view ><image  class="option" src="../../img/Zhifu.png"></image></view>
+                    <view class="order_name">交易明细</view>
+                    
+                </navigator>
+                <navigator class="" open-type="navigate" url="../order/index">
+                    <view ><image  class="option" src="../../img/Fapiao.png"></image></view>
+                    <view class="order_name">我的发票</view>
+                </navigator>
+                <navigator class="" open-type="navigate" url="../order/index">
+                    <view ><image  class="option" src="../../img/Zhifu2.png"></image></view>
+                    <view class="order_name">支付管理</view>
+                </navigator>
+            </view>
+            
+              
+        </view>
+
+        <!-- 售后地址 -->
+        <view class="shouhuo_wrap">
+            卡包管理
+        </view>
+        <view class="about_us">
+            <view class="contact_wrap">
+                <view class="contact">
+                    <view class="kefu">
+                        帮助与反馈
+                    </view>
+                    <view class="number">
+                        400-6184-40000
+                    </view>
+                </view>
+            </view>
+            <navigator url="../feedback/index">
+            <view class="yijian" >
+                邀请好友
+            </view>
+            </navigator>
+            
+    
+            <view class="guanyu">
+                关于我们
+            </view>
+        </view>
+       
+
+        <view class="tuijian">
+            把应用推荐给好盆友吧
+        </view>
+    </view>
+</view>
